@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valiant Voices Choir Hub - Voices United, Dreams Amplified</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Join Valiant Choir Hub - where individual voices unite to create transcendent musical experiences. Discover our community-driven platform for choral excellence." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fvillantch7389back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-card sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="valiant.jpeg" alt="Valiant Voices Logo" class="h-12 w-auto rounded-full">
+                    <span class="ml-3 text-xl font-serif font-bold text-primary">Valiant Voices</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-primary font-semibold border-b-2 border-primary">Home</a>
+                    <a href="join_our_choir.html" class="text-text-secondary hover:text-primary transition-smooth">Join Us</a>
+                    <a href="upcoming_performances.html" class="text-text-secondary hover:text-primary transition-smooth">Performances</a>
+                    <a href="music_library.html" class="text-text-secondary hover:text-primary transition-smooth">Music</a>
+                    <a href="about_valiant_choir.html" class="text-text-secondary hover:text-primary transition-smooth">About Us</a>
+                    <a href="partnership.html" class="text-text-secondary hover:text-primary transition-smooth">Partnership</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-primary hover:text-primary-700">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage.html" class="block px-3 py-2 text-primary font-semibold">Home</a>
+                <a href="join_our_choir.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Join Us</a>
+                <a href="upcoming_performances.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Performances</a>
+                <a href="music_library.html" class="block px-3 py-2 text-text-secondary hover:text-primary transition-smooth">Music</a>
+                <a href="about_valiant_choir.html" class="block px-3 py-2 text-text-secondary hover:text-primary transition-smooth">About Us</a>
+                <a href="partnership.html" class="block px-3 py-2 text-text-secondary hover:text-primary transition-smooth">Partnership</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Live Performance Preview -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Video Container -->
+        <div class="absolute inset-0 z-0">
+            <div class="relative w-full h-full bg-gradient-to-br from-primary-900 to-primary-700">
+                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Choir Performance" class="w-full h-full object-cover opacity-40" onerror="this.src='https://images.pexels.com/photos/7095/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
+                <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-primary-800/40 to-transparent"></div>
+            </div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 animate-fade-in">
+                Voices United,<br />
+                <span class="text-gradient-secondary">Dreams Amplified</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+                Where individual talents converge to create something transcendent. Join our community-driven musical platform and discover the transformative power of unified voices.
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
+                <a href="join_our_choir.html" class="btn-accent px-8 py-4 text-lg font-semibold">
+                    Join Our Choir
+                </a>
+                <a href="upcoming_performances.html" class="btn-secondary px-8 py-4 text-lg font-semibold">
+                    Upcoming Performances
+                </a>
+                <a href="partnership.html" class="btn-secondary px-8 py-4 text-lg font-semibold">
+                    Partner With us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Member Spotlight Carousel -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">
+                    Voices of Transformation
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Discover how our community members have grown through the power of music and shared harmony
+                </p>
+            </div>
+            
+            <!-- Carousel Container -->
+            <div class="relative">
+                <div class="overflow-hidden rounded-2xl">
+                    <div id="member-carousel" class="flex transition-transform duration-500 ease-out">
+                        <!-- Member Spotlight 1 -->
+                        <div class="w-full flex-shrink-0">
+                            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-elevated">
+                                <div class="grid md:grid-cols-2 gap-8 items-center">
+                                    <div class="order-2 md:order-1">
+                                        <blockquote class="text-2xl font-accent text-text-primary mb-6 leading-relaxed">
+                                            "Joining Vilant Choir transformed not just my voice, but my entire perspective on community and belonging. The growth I've experienced here goes far beyond music."
+                                        </blockquote>
+                                        <div class="flex items-center">
+                                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3" alt="" class="w-16 h-16 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                                            <div>
+                                                <p class="font-semibold text-primary"></p>
+                                                <p class="text-text-secondary">Soprano • Member since 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-1 md:order-2">
+                                        <img src="" alt="Choir Practice" class="w-full h-80 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Member Spotlight 2 -->
+                        <div class="w-full flex-shrink-0">
+                            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-elevated">
+                                <div class="grid md:grid-cols-2 gap-8 items-center">
+                                    <div class="order-2 md:order-1">
+                                        <blockquote class="text-2xl font-accent text-text-primary mb-6 leading-relaxed">
+                                            ""
+                                        </blockquote>
+                                        <div class="flex items-center">
+                                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3" alt="" class="w-16 h-16 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                                            <div>
+                                                <p class="font-semibold text-primary"></p>
+                                                <p class="text-text-secondary">Alto • Member since 2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-1 md:order-2">
+                                        <img src="" alt="" class="w-full h-80 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Member Spotlight 3 -->
+                        <div class="w-full flex-shrink-0">
+                            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-elevated">
+                                <div class="grid md:grid-cols-2 gap-8 items-center">
+                                    <div class="order-2 md:order-1">
+                                        <blockquote class="text-2xl font-accent text-text-primary mb-6 leading-relaxed">
+                                            ""
+                                        </blockquote>
+                                        <div class="flex items-center">
+                                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3" alt="" class="w-16 h-16 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                                            <div>
+                                                <p class="font-semibold text-primary"></p>
+                                                <p class="text-text-secondary">Tenor • Member since 2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-1 md:order-2">
+                                        <img src="" alt="" class="w-full h-80 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Member Spotlight 4 -->
+                        <div class="w-full flex-shrink-0">
+                            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-elevated">
+                                <div class="grid md:grid-cols-2 gap-8 items-center">
+                                    <div class="order-2 md:order-1">
+                                        <blockquote class="text-2xl font-accent text-text-primary mb-6 leading-relaxed">
+                                            ""
+                                        </blockquote>
+                                        <div class="flex items-center">
+                                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3" alt="" class="w-16 h-16 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                                            <div>
+                                                <p class="font-semibold text-primary"></p>
+                                                <p class="text-text-secondary">Bass • Member since 2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-1 md:order-2">
+                                        <img src="" alt="" class="w-full h-80 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Controls -->
+                <button id="prev-btn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white shadow-elevated rounded-full p-3 hover:bg-gray-50 transition-smooth">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <button id="next-btn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white shadow-elevated rounded-full p-3 hover:bg-gray-50 transition-smooth">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+                <!-- Carousel Indicators -->
+                <div class="flex justify-center mt-6 space-x-2">
+                    <button class="w-3 h-3 rounded-full bg-primary carousel-indicator active"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 carousel-indicator"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">
+                    Upcoming Performances
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Experience the magic of live choral music at our upcoming concerts and events
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Event Card 1 -->
+                <div class="card group hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Mid-Semester Concert" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/7095/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-secondary text-primary px-3 py-1 rounded-full text-sm font-semibold">
+                            Sep 30
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-primary mb-3">Mid-Semester Concert 2025</h3>
+                    <p class="text-text-secondary mb-4">Join us for an enchanting evening of traditional and contemporary holiday music featuring our full 60-voice choir.</p>
+                    <div class="flex items-center text-text-secondary mb-4">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        Auditorium Hall, University of Embu
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-primary">Ksh250</span>
+                        <a href="performance_tickets.html" class="btn-primary">Get Tickets</a>
+                    </div>
+                </div>
+                
+                <!-- Event Card 2 -->
+                <div class="card group hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Christmas Concert" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_960_720.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            November 22
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-primary mb-3">Christmass Concert</h3>
+                    <p class="text-text-secondary mb-4">A celebration of renewal featuring classical masterpieces and contemporary compositions that inspire hope and joy.</p>
+                    <div class="flex items-center text-text-secondary mb-4">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        Chatter Hall, University of Embu
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-primary">Ksh250</span>
+                        <a href="performance_tickets.html" class="btn-primary">Get Tickets</a>
+                    </div>
+                </div>
+                
+                <!-- Event Card 3 -->
+                <div class="card group hover:scale-105 transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Charity Benefit" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-success text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Dec 10
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-primary mb-3">Charity Benefit Concert</h3>
+                    <p class="text-text-secondary mb-4">Music for a cause - supporting local music education programs with an evening of inspiring performances.</p>
+                    <div class="flex items-center text-text-secondary mb-4">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        Chatter Hall
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-primary">Ksh 350</span>
+                        <a href="performance_tickets.html" class="btn-primary">Get Tickets</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="upcoming_performances.html" class="btn-secondary px-8 py-4 text-lg">
+                    View All Performances
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Community Impact Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">
+                    Community Impact
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Through music, we create positive change in our community and beyond
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Impact Stat 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-primary-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                        </svg>
+                    </div>
+                    <div class="text-4xl font-bold text-primary mb-2">Ksh10K+</div>
+                    <p class="text-text-secondary">Raised for local music education programs</p>
+                </div>
+                
+                <!-- Impact Stat 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-accent to-accent-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-4xl font-bold text-accent mb-2">2,500+</div>
+                    <p class="text-text-secondary">Community members reached through performances</p>
+                </div>
+                
+                <!-- Impact Stat 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-secondary to-secondary-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-4xl font-bold text-secondary mb-2">5+</div>
+                    <p class="text-text-secondary">Charity concerts performed since 2024</p>
+                </div>
+            </div>
+            
+            <!-- Partnership Logos -->
+            <div class="border-t border-gray-200 pt-16">
+                <p class="text-center text-text-secondary mb-8">Proud partners with local organizations</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
+                    <div class="bg-gray-100 px-6 py-3 rounded-lg">
+                        <span class="font-semibold text-gray-600">Music Education Foundation</span>
+                    </div>
+                    <div class="bg-gray-100 px-6 py-3 rounded-lg">
+                        <span class="font-semibold text-gray-600">University of Embu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-gradient-to-br from-primary to-primary-900 text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+                Ready to Find Your Voice?
+            </h2>
+            <p class="text-xl mb-8 opacity-90 leading-relaxed">
+                Join our community of passionate singers and discover the transformative power of music. Whether you're a beginner or experienced vocalist, there's a place for you in our choir family.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="join_our_choir.html" class="btn-secondary px-8 py-4 text-lg font-semibold">
+                    Start Your Journey
+                </a>
+                <a href="upcoming_performances.html" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-smooth border border-white/20">
+                    Attend a Concert
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="valiant.jpeg" alt="Valiant Voices Logo" class="h-12 w-auto rounded-full">
+                        <span class="ml-3 text-2xl font-serif font-bold">Valiant Voices Choir</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Creating harmonious experiences through the power of music. Join us in our journey to inspire and be inspired.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-secondary transition-smooth">
+                            <img src="x.jpeg" alt="twitter logo" class="h-12 w-auto rounded-full">
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-secondary transition-smooth">
+                            <img src="instagram.jpeg" alt="instagram logo" class="h-12 w-auto rounded-full">
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-secondary transition-smooth">
+                            <img src="youtube.jpeg" alt="youtube logo" class="h-12 w-auto rounded-full">
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-secondary transition-smooth">
+                            <img src="tiktok.jpeg" alt="tiktok logo" class="h-12 w-auto rounded-full">
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-white transition-smooth">Home</a></li>
+                        <li><a href="join_our_choir.html" class="text-gray-300 hover:text-white transition-smooth">Join Us</a></li>
+                        <li><a href="upcoming_performances.html" class="text-gray-300 hover:text-white transition-smooth">Performances</a></li>
+                        <li><a href="music_library.html" class="text-gray-300 hover:text-white transition-smooth">Music Library</a></li>
+                        <li><a href="about_valiant_choir.html" class="text-gray-300 hover:text-white transition-smooth">About Us</a></li>
+                        <li><a href="partnership.html" class="text-gray-300 hover:text-white transition-smooth">Partnership</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-serif font-bold mb-6">Contact</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            Auditorium Hall<br />University of Embu
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 Valiant Voices Choir. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition-smooth">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-smooth">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include API and homepage functionality -->
+    <script src="../public/js/api.js"></script>
+    <script src="../public/js/homepage.js"></script>
+    
+    <!-- JavaScript for Interactive Elements -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Member Carousel
+        const carousel = document.getElementById('member-carousel');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const indicators = document.querySelectorAll('.carousel-indicator');
+        let currentSlide = 0;
+        const totalSlides = 2;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('bg-primary', index === currentSlide);
+                indicator.classList.toggle('bg-gray-300', index !== currentSlide);
+            });
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentSlide = currentSlide === 0 ? totalSlides - 1 : currentSlide - 1;
+            updateCarousel();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentSlide = currentSlide === totalSlides - 1 ? 0 : currentSlide + 1;
+            updateCarousel();
+        });
+
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                updateCarousel();
+            });
+        });
+
+        // Auto-advance carousel
+        setInterval(() => {
+            currentSlide = currentSlide === totalSlides - 1 ? 0 : currentSlide + 1;
+            updateCarousel();
+        }, 5000);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animations
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

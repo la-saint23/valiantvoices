@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #8B1538; /* burgundy-800 */
+  --color-primary-50: #FDF2F4; /* burgundy-50 */
+  --color-primary-100: #FCE7EA; /* burgundy-100 */
+  --color-primary-200: #F9CFD6; /* burgundy-200 */
+  --color-primary-300: #F5A7B8; /* burgundy-300 */
+  --color-primary-400: #EF7F9A; /* burgundy-400 */
+  --color-primary-500: #E9577C; /* burgundy-500 */
+  --color-primary-600: #C73E63; /* burgundy-600 */
+  --color-primary-700: #A5254A; /* burgundy-700 */
+  --color-primary-800: #8B1538; /* burgundy-800 */
+  --color-primary-900: #6B1029; /* burgundy-900 */
+
+  /* Secondary Colors */
+  --color-secondary: #D4AF37; /* gold-500 */
+  --color-secondary-50: #FEFCF0; /* gold-50 */
+  --color-secondary-100: #FDF8E1; /* gold-100 */
+  --color-secondary-200: #FBF1C3; /* gold-200 */
+  --color-secondary-300: #F8E485; /* gold-300 */
+  --color-secondary-400: #F5D747; /* gold-400 */
+  --color-secondary-500: #D4AF37; /* gold-500 */
+  --color-secondary-600: #B8952F; /* gold-600 */
+  --color-secondary-700: #9C7B27; /* gold-700 */
+  --color-secondary-800: #80611F; /* gold-800 */
+  --color-secondary-900: #644717; /* gold-900 */
+
+  /* Accent Colors */
+  --color-accent: #2D8B8B; /* teal-600 */
+  --color-accent-50: #F0FDFD; /* teal-50 */
+  --color-accent-100: #CCFBF1; /* teal-100 */
+  --color-accent-200: #99F6E4; /* teal-200 */
+  --color-accent-300: #5EEAD4; /* teal-300 */
+  --color-accent-400: #2DD4BF; /* teal-400 */
+  --color-accent-500: #14B8A6; /* teal-500 */
+  --color-accent-600: #2D8B8B; /* teal-600 */
+  --color-accent-700: #0F766E; /* teal-700 */
+  --color-accent-800: #115E59; /* teal-800 */
+  --color-accent-900: #134E4A; /* teal-900 */
+
+  /* Background Colors */
+  --color-background: #FEFEFE; /* neutral-50 */
+  --color-surface: #F8F6F4; /* warm-gray-50 */
+
+  /* Text Colors */
+  --color-text-primary: #2C2C2C; /* gray-800 */
+  --color-text-secondary: #6B6B6B; /* gray-500 */
+
+  /* Status Colors */
+  --color-success: #4A7C59; /* green-700 */
+  --color-success-50: #F0F9FF; /* green-50 */
+  --color-success-100: #DCFCE7; /* green-100 */
+  --color-success-500: #22C55E; /* green-500 */
+
+  --color-warning: #B8860B; /* amber-600 */
+  --color-warning-50: #FFFBEB; /* amber-50 */
+  --color-warning-100: #FEF3C7; /* amber-100 */
+  --color-warning-500: #F59E0B; /* amber-500 */
+
+  --color-error: #A0522D; /* orange-700 */
+  --color-error-50: #FFF7ED; /* orange-50 */
+  --color-error-100: #FFEDD5; /* orange-100 */
+  --color-error-500: #F97316; /* orange-500 */
+
+  /* Shadows */
+  --shadow-subtle: 0 4px 12px rgba(139, 21, 56, 0.08);
+  --shadow-card: 0 2px 8px rgba(139, 21, 56, 0.06);
+  --shadow-elevated: 0 8px 24px rgba(139, 21, 56, 0.12);
+
+  /* Transitions */
+  --transition-fast: 300ms ease-out;
+  --transition-medium: 400ms ease-out;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-text-primary);
+  }
+
+  .font-accent {
+    font-family: 'Crimson Text', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-primary-700 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-primary px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-secondary-600 hover:shadow-lg;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-accent-700 hover:shadow-lg;
+  }
+
+  .card {
+    @apply bg-white rounded-xl p-6 shadow-card transition-all duration-300 hover:shadow-elevated;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300;
+  }
+
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-primary-600 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-secondary {
+    @apply bg-gradient-to-r from-secondary to-secondary-600 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all var(--transition-fast);
+  }
+
+  .transition-page {
+    transition: all var(--transition-medium);
+  }
+
+  .shadow-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+}
